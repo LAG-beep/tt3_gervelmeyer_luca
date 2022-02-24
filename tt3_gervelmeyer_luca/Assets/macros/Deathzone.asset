@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Deathzone
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":41.64641,"y":-114.551},"zoom":0.6999999,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-597.0,"y":-199.0},"guid":"de005db2-0cdf-457e-9ed6-b8c133d1a628","$version":"A","$type":"Bolt.OnCollisionEnter2D","$id":"9"},{"chainable":false,"member":{"name":"CompareTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%tag":{"$content":"Player","$type":"System.String"}},"position":{"x":-262.0,"y":-94.0},"guid":"04bc0c0e-ca2a-49ee-84e1-43928d34f195","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"argumentCount":0,"defaultValues":{"name":{"$content":"Death","$type":"System.String"},"target":null},"position":{"x":214.0,"y":-197.0},"guid":"0bd6e790-e960-4f67-a1ba-8f6cbcdbc757","$version":"A","$type":"Bolt.TriggerCustomEvent","$id":"14"},{"defaultValues":{},"position":{"x":-33.0,"y":-216.0},"guid":"d0c06638-9b95-4379-85c8-ce63d7d28637","$version":"A","$type":"Bolt.Branch","$id":"16"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"2b7d901d-c208-403b-b067-fed895b2e0ab","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"14"},"destinationKey":"enter","guid":"22790d28-c065-4e73-b59e-74719a5849ee","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"d1fb102d-7726-482e-9b11-2f38af30e3d5","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"condition","guid":"f839c869-2bbd-4654-8d32-13a43d48adeb","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"14"},"destinationKey":"target","guid":"93e7b360-58ed-4eb0-ac3e-5837ce2a9dda","$type":"Bolt.ValueConnection"},{"position":{"xMin":-659.1428,"yMin":-359.0,"xMax":399.4287,"yMax":117.4286},"label":"Deathzone","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"42b51fe1-112b-43ce-9c82-1002a9fb6860","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []
